@@ -18,7 +18,7 @@ class RacingDataset(Dataset):
         
 
 if __name__ == "__main__":
-    dataset = RacingDataset('racing_data/raw_racing_frames.npy')
+    dataset = RacingDataset('racing_data/play_action_frames.npy')
     dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
 
     batch = next(iter(dataloader))

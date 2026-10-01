@@ -6,10 +6,11 @@ from torch.utils.data import DataLoader
 import matplotlib.pyplot as plt
 import numpy as np
 import lpips
+from config import FRAMES_PATH, VQ_VAE_PATH, VQ_VAE_CONFIG, get_device
 
-def train():
+def train(num_training_steps=5000, save_path=VQ_VAE_PATH, **config_overrides):
     # 장치 설정 (MAC -> mps)
-    device = torch.device("mps" if torch.backends.mps.is_available() else "cuda" if torch.cuda.is_available() else "cpu")
+    device = get_device()
     print(f"사용 중인 장치: {device}")
 
     # lpips 모델 초기화
@@ -17,31 +18,26 @@ def train():
 
     # 하이퍼파라미터
     batch_size = 64
-    num_training_steps = 5000
-    num_hiddens = 128
-    num_residual_hiddens = 32
-    num_residual_layers = 2
-    embedding_dim = 64
-    num_embeddings = 512    # 단어장 크기
-    commitment_cost = 0.5
     learning_rate = 2e-4
 
     # 모델 및 옵티마이저 초기화
-    model = VQVAE(num_hiddens, num_residual_layers, num_residual_hiddens, num_embeddings, embedding_dim, commitment_cost).to(device)
+    # config_overrides로 num_embeddings 등을 바꿔 실험 가능 (예: train(num_embeddings=256))
+    model = VQVAE(**{**VQ_VAE_CONFIG, **config_overrides}).to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate, amsgrad=False)
 
     # 데이터셋 로드 (RacingDataset 사용)
-    dataset = RacingDataset('racing_data/play_action_frames.npy')
+    dataset = RacingDataset(FRAMES_PATH)
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
 
     # 학습 시작
     print(f"학습 시작 - Device : {device}")
     model.train()
+    iter_dataloader = iter(dataloader)
     
     for i in range(num_training_steps):
         try:
             data = next(iter_dataloader)
-        except:
+        except StopIteration:
             iter_dataloader = iter(dataloader)
             data = next(iter_dataloader)
 
@@ -69,8 +65,8 @@ def train():
             print(f"Step {i+1}/{num_training_steps}, Loss: {loss.item():.4f}, Recon Error: {recon_error.item():.4f}, VQ Loss: {vq_loss.item():.4f}, LPIPS: {lpips_loss.item():.4f}, Perplexity: {perplexity.item():.4f}")
 
     # 모델 저장
-    torch.save(model.state_dict(), "model/vq_vae_racing.pth")
-    print("모델 저장 완료: model/vq_vae_racing.pth")
+    torch.save(model.state_dict(), save_path)
+    print(f"모델 저장 완료: {save_path}")
 
 if __name__ == "__main__":
     train()

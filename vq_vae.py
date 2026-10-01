@@ -105,11 +105,11 @@ class Decoder(nn.Module):
 
 # 5. VQ-VAE Wrapper
 class VQVAE(nn.Module):
-    def __init__(self, num_hiddens, num_residual_layers, num_residual_hiddens, num_embeddings, embedding_dim, commitment_cost):
+    def __init__(self, num_hiddens, num_residual_layers, num_residual_hiddens, num_embeddings, embedding_dim, commitment_cost, dead_code_threshold=1.0):
         super(VQVAE, self).__init__()
         self._encoder = Encoder(3, num_hiddens, num_residual_layers, num_residual_hiddens)
         self._pre_vq_conv = nn.Conv2d(in_channels=num_hiddens, out_channels=embedding_dim, kernel_size=1, stride=1)
-        self._vq_vae = EMAVectorQuantizer(num_embeddings, embedding_dim, commitment_cost)
+        self._vq_vae = EMAVectorQuantizer(num_embeddings, embedding_dim, commitment_cost, dead_code_threshold=dead_code_threshold)
         self._decoder = Decoder(embedding_dim, num_hiddens, num_residual_layers, num_residual_hiddens)
 
     def forward(self, x):
@@ -121,13 +121,15 @@ class VQVAE(nn.Module):
 
 # 6. EMA VQ-VAE Wrapper
 class EMAVectorQuantizer(nn.Module):
-    def __init__(self, num_embeddings, embedding_dim, commitment_cost, decay=0.99, epsilon=1e-5):
+    def __init__(self, num_embeddings, embedding_dim, commitment_cost, decay=0.99, epsilon=1e-5, dead_code_threshold=1.0):
         super(EMAVectorQuantizer, self).__init__()
         self.embedding_dim = embedding_dim
         self.num_embeddings = num_embeddings
         self.commitment_cost = commitment_cost
         self.decay = decay
         self.epsilon = epsilon
+        # EMA 사용량이 이 값보다 작은 토큰을 죽은 토큰으로 보고 교체 (0이면 교체 안 함)
+        self.dead_code_threshold = dead_code_threshold
 
         # 1. 단어장(Embedding) 선언 및 초기화
         self.embedding = nn.Embedding(self.num_embeddings, self.embedding_dim)
@@ -165,8 +167,7 @@ class EMAVectorQuantizer(nn.Module):
             self._ema_w.data.copy_(self._ema_w * self.decay + (1 - self.decay) * dw)
             
             # 사용량이 너무 적은(죽은) 토큰을 찾아 현재 입력값 중 하나로 바꿈
-            usage_threshold = 1.0
-            dead_indices = (self._ema_cluster_size < usage_threshold).nonzero(as_tuple=True)[0]
+            dead_indices = (self._ema_cluster_size < self.dead_code_threshold).nonzero(as_tuple=True)[0]
             
             if len(dead_indices) > 0:
                 # 현재 배치에서 무작위로 샘플을 뽑아 죽은 토큰 위치에 주입

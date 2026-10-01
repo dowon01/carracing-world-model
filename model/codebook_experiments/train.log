@@ -1,0 +1,229 @@
+{"num_embeddings": 512, "dead_code_threshold": 1.0, "recon_mse": 0.0007008472877244155, "psnr": 31.543766030372815, "static_churn": 0.43883727187553956, "copy_agreement": 0.5183135501050105, "codes_used": 512, "perplexity": 266.8865681659193, "nn_dist_ratio": 0.14204490851348664}
+사용 중인 장치: mps
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/Users/dowon/miniconda3/envs/car-racing/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/Users/dowon/miniconda3/envs/car-racing/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /Users/dowon/miniconda3/envs/car-racing/lib/python3.11/site-packages/lpips/weights/v0.1/vgg.pth
+학습 시작 - Device : mps
+Step 100/5000, Loss: 0.0592, Recon Error: 0.0131, VQ Loss: 0.0003, LPIPS: 0.4574, Perplexity: 30.6814
+Step 200/5000, Loss: 0.0366, Recon Error: 0.0056, VQ Loss: 0.0005, LPIPS: 0.3044, Perplexity: 53.6034
+Step 300/5000, Loss: 0.0304, Recon Error: 0.0044, VQ Loss: 0.0005, LPIPS: 0.2546, Perplexity: 80.8375
+Step 400/5000, Loss: 0.0246, Recon Error: 0.0035, VQ Loss: 0.0006, LPIPS: 0.2055, Perplexity: 96.6013
+Step 500/5000, Loss: 0.0178, Recon Error: 0.0030, VQ Loss: 0.0005, LPIPS: 0.1423, Perplexity: 113.4141
+Step 600/5000, Loss: 0.0154, Recon Error: 0.0028, VQ Loss: 0.0006, LPIPS: 0.1198, Perplexity: 135.9321
+Step 700/5000, Loss: 0.0188, Recon Error: 0.0028, VQ Loss: 0.0007, LPIPS: 0.1534, Perplexity: 161.1389
+Step 800/5000, Loss: 0.0139, Recon Error: 0.0023, VQ Loss: 0.0006, LPIPS: 0.1094, Perplexity: 167.2337
+Step 900/5000, Loss: 0.0121, Recon Error: 0.0022, VQ Loss: 0.0007, LPIPS: 0.0921, Perplexity: 174.3144
+Step 1000/5000, Loss: 0.0108, Recon Error: 0.0019, VQ Loss: 0.0007, LPIPS: 0.0818, Perplexity: 174.6871
+Step 1100/5000, Loss: 0.0108, Recon Error: 0.0019, VQ Loss: 0.0008, LPIPS: 0.0807, Perplexity: 180.2785
+Step 1200/5000, Loss: 0.0131, Recon Error: 0.0017, VQ Loss: 0.0007, LPIPS: 0.1062, Perplexity: 162.2445
+Step 1300/5000, Loss: 0.0091, Recon Error: 0.0017, VQ Loss: 0.0007, LPIPS: 0.0671, Perplexity: 176.2142
+Step 1400/5000, Loss: 0.0081, Recon Error: 0.0015, VQ Loss: 0.0007, LPIPS: 0.0588, Perplexity: 175.7744
+Step 1500/5000, Loss: 0.0066, Recon Error: 0.0012, VQ Loss: 0.0006, LPIPS: 0.0484, Perplexity: 165.3107
+Step 1600/5000, Loss: 0.0069, Recon Error: 0.0012, VQ Loss: 0.0007, LPIPS: 0.0494, Perplexity: 167.6486
+Step 1700/5000, Loss: 0.0074, Recon Error: 0.0014, VQ Loss: 0.0008, LPIPS: 0.0519, Perplexity: 176.1382
+Step 1800/5000, Loss: 0.0069, Recon Error: 0.0014, VQ Loss: 0.0008, LPIPS: 0.0475, Perplexity: 176.5858
+Step 1900/5000, Loss: 0.0104, Recon Error: 0.0014, VQ Loss: 0.0008, LPIPS: 0.0818, Perplexity: 132.2769
+Step 2000/5000, Loss: 0.0087, Recon Error: 0.0014, VQ Loss: 0.0007, LPIPS: 0.0662, Perplexity: 145.2885
+Step 2100/5000, Loss: 0.0067, Recon Error: 0.0013, VQ Loss: 0.0007, LPIPS: 0.0469, Perplexity: 172.6714
+Step 2200/5000, Loss: 0.0060, Recon Error: 0.0012, VQ Loss: 0.0007, LPIPS: 0.0414, Perplexity: 167.0749
+Step 2300/5000, Loss: 0.0056, Recon Error: 0.0011, VQ Loss: 0.0007, LPIPS: 0.0384, Perplexity: 174.7038
+Step 2400/5000, Loss: 0.0052, Recon Error: 0.0010, VQ Loss: 0.0007, LPIPS: 0.0347, Perplexity: 169.5607
+Step 2500/5000, Loss: 0.0058, Recon Error: 0.0012, VQ Loss: 0.0008, LPIPS: 0.0377, Perplexity: 178.3842
+Step 2600/5000, Loss: 0.0062, Recon Error: 0.0012, VQ Loss: 0.0008, LPIPS: 0.0412, Perplexity: 174.3619
+Step 2700/5000, Loss: 0.0050, Recon Error: 0.0010, VQ Loss: 0.0007, LPIPS: 0.0328, Perplexity: 170.5202
+Step 2800/5000, Loss: 0.0056, Recon Error: 0.0011, VQ Loss: 0.0008, LPIPS: 0.0366, Perplexity: 175.0060
+Step 2900/5000, Loss: 0.0052, Recon Error: 0.0011, VQ Loss: 0.0008, LPIPS: 0.0332, Perplexity: 173.3582
+Step 3000/5000, Loss: 0.0050, Recon Error: 0.0010, VQ Loss: 0.0007, LPIPS: 0.0331, Perplexity: 169.3220
+Step 3100/5000, Loss: 0.0052, Recon Error: 0.0011, VQ Loss: 0.0008, LPIPS: 0.0326, Perplexity: 177.3719
+Step 3200/5000, Loss: 0.0098, Recon Error: 0.0013, VQ Loss: 0.0008, LPIPS: 0.0772, Perplexity: 139.4033
+Step 3300/5000, Loss: 0.0060, Recon Error: 0.0010, VQ Loss: 0.0007, LPIPS: 0.0429, Perplexity: 149.1179
+Step 3400/5000, Loss: 0.0066, Recon Error: 0.0010, VQ Loss: 0.0007, LPIPS: 0.0492, Perplexity: 139.0761
+Step 3500/5000, Loss: 0.0057, Recon Error: 0.0010, VQ Loss: 0.0007, LPIPS: 0.0410, Perplexity: 150.5407
+Step 3600/5000, Loss: 0.0044, Recon Error: 0.0009, VQ Loss: 0.0006, LPIPS: 0.0289, Perplexity: 153.1376
+Step 3700/5000, Loss: 0.0038, Recon Error: 0.0008, VQ Loss: 0.0006, LPIPS: 0.0241, Perplexity: 158.7772
+Step 3800/5000, Loss: 0.0039, Recon Error: 0.0008, VQ Loss: 0.0006, LPIPS: 0.0240, Perplexity: 157.9862
+Step 3900/5000, Loss: 0.0047, Recon Error: 0.0010, VQ Loss: 0.0008, LPIPS: 0.0292, Perplexity: 168.3857
+Step 4000/5000, Loss: 0.0038, Recon Error: 0.0008, VQ Loss: 0.0007, LPIPS: 0.0235, Perplexity: 158.9775
+Step 4100/5000, Loss: 0.0037, Recon Error: 0.0008, VQ Loss: 0.0007, LPIPS: 0.0226, Perplexity: 158.2892
+Step 4200/5000, Loss: 0.0040, Recon Error: 0.0009, VQ Loss: 0.0007, LPIPS: 0.0240, Perplexity: 162.8408
+Step 4300/5000, Loss: 0.0041, Recon Error: 0.0009, VQ Loss: 0.0007, LPIPS: 0.0243, Perplexity: 167.8071
+Step 4400/5000, Loss: 0.0040, Recon Error: 0.0009, VQ Loss: 0.0008, LPIPS: 0.0239, Perplexity: 164.2817
+Step 4500/5000, Loss: 0.0034, Recon Error: 0.0007, VQ Loss: 0.0006, LPIPS: 0.0210, Perplexity: 157.2310
+Step 4600/5000, Loss: 0.0039, Recon Error: 0.0009, VQ Loss: 0.0008, LPIPS: 0.0225, Perplexity: 162.1129
+Step 4700/5000, Loss: 0.0037, Recon Error: 0.0008, VQ Loss: 0.0007, LPIPS: 0.0216, Perplexity: 156.8119
+Step 4800/5000, Loss: 0.0037, Recon Error: 0.0009, VQ Loss: 0.0007, LPIPS: 0.0217, Perplexity: 161.4619
+Step 4900/5000, Loss: 0.0041, Recon Error: 0.0009, VQ Loss: 0.0008, LPIPS: 0.0241, Perplexity: 161.4593
+Step 5000/5000, Loss: 0.0034, Recon Error: 0.0007, VQ Loss: 0.0007, LPIPS: 0.0201, Perplexity: 153.8167
+모델 저장 완료: model/codebook_experiments/vq_vae_k256_thr1.0.pth
+{"num_embeddings": 256, "dead_code_threshold": 1.0, "recon_mse": 0.0007596350312232971, "psnr": 31.193950156093663, "static_churn": 0.3795400306225564, "copy_agreement": 0.5759486104860486, "codes_used": 256, "perplexity": 157.41942627999947, "nn_dist_ratio": 0.1945596617726981, "train_minutes": 25.428452503681182}
+사용 중인 장치: mps
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /Users/dowon/miniconda3/envs/car-racing/lib/python3.11/site-packages/lpips/weights/v0.1/vgg.pth
+학습 시작 - Device : mps
+Step 100/5000, Loss: 0.0610, Recon Error: 0.0125, VQ Loss: 0.0007, LPIPS: 0.4774, Perplexity: 19.9642
+Step 200/5000, Loss: 0.0364, Recon Error: 0.0057, VQ Loss: 0.0004, LPIPS: 0.3022, Perplexity: 40.1688
+Step 300/5000, Loss: 0.0265, Recon Error: 0.0042, VQ Loss: 0.0003, LPIPS: 0.2198, Perplexity: 66.5555
+Step 400/5000, Loss: 0.0191, Recon Error: 0.0033, VQ Loss: 0.0003, LPIPS: 0.1548, Perplexity: 73.9480
+Step 500/5000, Loss: 0.0177, Recon Error: 0.0029, VQ Loss: 0.0003, LPIPS: 0.1451, Perplexity: 74.5351
+Step 600/5000, Loss: 0.0155, Recon Error: 0.0028, VQ Loss: 0.0003, LPIPS: 0.1245, Perplexity: 82.9405
+Step 700/5000, Loss: 0.0126, Recon Error: 0.0022, VQ Loss: 0.0003, LPIPS: 0.1002, Perplexity: 83.6649
+Step 800/5000, Loss: 0.0274, Recon Error: 0.0029, VQ Loss: 0.0006, LPIPS: 0.2394, Perplexity: 56.9282
+Step 900/5000, Loss: 0.0120, Recon Error: 0.0022, VQ Loss: 0.0004, LPIPS: 0.0939, Perplexity: 88.0677
+Step 1000/5000, Loss: 0.0101, Recon Error: 0.0020, VQ Loss: 0.0004, LPIPS: 0.0769, Perplexity: 85.4827
+Step 1100/5000, Loss: 0.0097, Recon Error: 0.0018, VQ Loss: 0.0004, LPIPS: 0.0751, Perplexity: 86.9129
+Step 1200/5000, Loss: 0.0158, Recon Error: 0.0021, VQ Loss: 0.0006, LPIPS: 0.1305, Perplexity: 73.8012
+Step 1300/5000, Loss: 0.0096, Recon Error: 0.0018, VQ Loss: 0.0005, LPIPS: 0.0726, Perplexity: 89.6844
+Step 1400/5000, Loss: 0.0082, Recon Error: 0.0017, VQ Loss: 0.0005, LPIPS: 0.0606, Perplexity: 89.9340
+Step 1500/5000, Loss: 0.0077, Recon Error: 0.0015, VQ Loss: 0.0004, LPIPS: 0.0577, Perplexity: 89.0648
+Step 1600/5000, Loss: 0.0074, Recon Error: 0.0015, VQ Loss: 0.0005, LPIPS: 0.0549, Perplexity: 89.7889
+Step 1700/5000, Loss: 0.0085, Recon Error: 0.0015, VQ Loss: 0.0004, LPIPS: 0.0656, Perplexity: 83.6340
+Step 1800/5000, Loss: 0.0069, Recon Error: 0.0013, VQ Loss: 0.0004, LPIPS: 0.0515, Perplexity: 90.4829
+Step 1900/5000, Loss: 0.0066, Recon Error: 0.0013, VQ Loss: 0.0005, LPIPS: 0.0485, Perplexity: 92.3810
+Step 2000/5000, Loss: 0.0066, Recon Error: 0.0014, VQ Loss: 0.0005, LPIPS: 0.0478, Perplexity: 92.7520
+Step 2100/5000, Loss: 0.0061, Recon Error: 0.0012, VQ Loss: 0.0005, LPIPS: 0.0446, Perplexity: 93.1140
+Step 2200/5000, Loss: 0.0129, Recon Error: 0.0017, VQ Loss: 0.0006, LPIPS: 0.1058, Perplexity: 67.2190
+Step 2300/5000, Loss: 0.0064, Recon Error: 0.0013, VQ Loss: 0.0005, LPIPS: 0.0464, Perplexity: 84.6799
+Step 2400/5000, Loss: 0.0057, Recon Error: 0.0011, VQ Loss: 0.0005, LPIPS: 0.0405, Perplexity: 92.3419
+Step 2500/5000, Loss: 0.0057, Recon Error: 0.0011, VQ Loss: 0.0005, LPIPS: 0.0419, Perplexity: 95.2812
+Step 2600/5000, Loss: 0.0050, Recon Error: 0.0010, VQ Loss: 0.0005, LPIPS: 0.0356, Perplexity: 91.7558
+Step 2700/5000, Loss: 0.0055, Recon Error: 0.0011, VQ Loss: 0.0005, LPIPS: 0.0387, Perplexity: 95.3938
+Step 2800/5000, Loss: 0.0056, Recon Error: 0.0012, VQ Loss: 0.0005, LPIPS: 0.0383, Perplexity: 95.3356
+Step 2900/5000, Loss: 0.0050, Recon Error: 0.0010, VQ Loss: 0.0005, LPIPS: 0.0343, Perplexity: 95.9020
+Step 3000/5000, Loss: 0.0057, Recon Error: 0.0012, VQ Loss: 0.0006, LPIPS: 0.0392, Perplexity: 97.4653
+Step 3100/5000, Loss: 0.0052, Recon Error: 0.0012, VQ Loss: 0.0006, LPIPS: 0.0345, Perplexity: 96.1587
+Step 3200/5000, Loss: 0.0049, Recon Error: 0.0011, VQ Loss: 0.0005, LPIPS: 0.0327, Perplexity: 94.4966
+Step 3300/5000, Loss: 0.0050, Recon Error: 0.0011, VQ Loss: 0.0006, LPIPS: 0.0325, Perplexity: 96.1456
+Step 3400/5000, Loss: 0.0049, Recon Error: 0.0009, VQ Loss: 0.0006, LPIPS: 0.0344, Perplexity: 98.4836
+Step 3500/5000, Loss: 0.0098, Recon Error: 0.0015, VQ Loss: 0.0007, LPIPS: 0.0771, Perplexity: 66.2392
+Step 3600/5000, Loss: 0.0072, Recon Error: 0.0011, VQ Loss: 0.0006, LPIPS: 0.0547, Perplexity: 66.9008
+Step 3700/5000, Loss: 0.0043, Recon Error: 0.0009, VQ Loss: 0.0005, LPIPS: 0.0295, Perplexity: 87.6295
+Step 3800/5000, Loss: 0.0044, Recon Error: 0.0009, VQ Loss: 0.0005, LPIPS: 0.0296, Perplexity: 89.0022
+Step 3900/5000, Loss: 0.0041, Recon Error: 0.0010, VQ Loss: 0.0005, LPIPS: 0.0266, Perplexity: 89.6250
+Step 4000/5000, Loss: 0.0041, Recon Error: 0.0009, VQ Loss: 0.0005, LPIPS: 0.0263, Perplexity: 88.5416
+Step 4100/5000, Loss: 0.0040, Recon Error: 0.0008, VQ Loss: 0.0005, LPIPS: 0.0267, Perplexity: 91.4031
+Step 4200/5000, Loss: 0.0041, Recon Error: 0.0010, VQ Loss: 0.0005, LPIPS: 0.0259, Perplexity: 89.5806
+Step 4300/5000, Loss: 0.0042, Recon Error: 0.0010, VQ Loss: 0.0006, LPIPS: 0.0266, Perplexity: 95.5324
+Step 4400/5000, Loss: 0.0042, Recon Error: 0.0010, VQ Loss: 0.0005, LPIPS: 0.0268, Perplexity: 93.8080
+Step 4500/5000, Loss: 0.0043, Recon Error: 0.0011, VQ Loss: 0.0005, LPIPS: 0.0272, Perplexity: 92.4838
+Step 4600/5000, Loss: 0.0039, Recon Error: 0.0010, VQ Loss: 0.0005, LPIPS: 0.0241, Perplexity: 92.4202
+Step 4700/5000, Loss: 0.0042, Recon Error: 0.0009, VQ Loss: 0.0005, LPIPS: 0.0275, Perplexity: 92.6240
+Step 4800/5000, Loss: 0.0036, Recon Error: 0.0009, VQ Loss: 0.0005, LPIPS: 0.0224, Perplexity: 91.1900
+Step 4900/5000, Loss: 0.0036, Recon Error: 0.0009, VQ Loss: 0.0005, LPIPS: 0.0223, Perplexity: 88.4973
+Step 5000/5000, Loss: 0.0035, Recon Error: 0.0008, VQ Loss: 0.0005, LPIPS: 0.0223, Perplexity: 93.6622
+모델 저장 완료: model/codebook_experiments/vq_vae_k128_thr1.0.pth
+{"num_embeddings": 128, "dead_code_threshold": 1.0, "recon_mse": 0.0008371695044140021, "psnr": 30.771866000967762, "static_churn": 0.4194575933685601, "copy_agreement": 0.5384667372987298, "codes_used": 128, "perplexity": 91.00550423243669, "nn_dist_ratio": 0.16031503018744428, "train_minutes": 23.665726435184478}
+사용 중인 장치: mps
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /Users/dowon/miniconda3/envs/car-racing/lib/python3.11/site-packages/lpips/weights/v0.1/vgg.pth
+학습 시작 - Device : mps
+Step 100/5000, Loss: 0.0754, Recon Error: 0.0193, VQ Loss: 0.0002, LPIPS: 0.5588, Perplexity: 9.8131
+Step 200/5000, Loss: 0.0353, Recon Error: 0.0067, VQ Loss: 0.0007, LPIPS: 0.2801, Perplexity: 11.8156
+Step 300/5000, Loss: 0.0254, Recon Error: 0.0046, VQ Loss: 0.0005, LPIPS: 0.2038, Perplexity: 29.2598
+Step 400/5000, Loss: 0.0204, Recon Error: 0.0034, VQ Loss: 0.0005, LPIPS: 0.1649, Perplexity: 40.5038
+Step 500/5000, Loss: 0.0190, Recon Error: 0.0030, VQ Loss: 0.0005, LPIPS: 0.1553, Perplexity: 80.1402
+Step 600/5000, Loss: 0.0144, Recon Error: 0.0026, VQ Loss: 0.0004, LPIPS: 0.1134, Perplexity: 122.8798
+Step 700/5000, Loss: 0.0117, Recon Error: 0.0023, VQ Loss: 0.0004, LPIPS: 0.0903, Perplexity: 144.0779
+Step 800/5000, Loss: 0.0106, Recon Error: 0.0020, VQ Loss: 0.0004, LPIPS: 0.0817, Perplexity: 165.1690
+Step 900/5000, Loss: 0.0114, Recon Error: 0.0019, VQ Loss: 0.0004, LPIPS: 0.0903, Perplexity: 156.6122
+Step 1000/5000, Loss: 0.0093, Recon Error: 0.0018, VQ Loss: 0.0004, LPIPS: 0.0710, Perplexity: 177.3066
+Step 1100/5000, Loss: 0.0084, Recon Error: 0.0017, VQ Loss: 0.0005, LPIPS: 0.0626, Perplexity: 178.2421
+Step 1200/5000, Loss: 0.0162, Recon Error: 0.0018, VQ Loss: 0.0006, LPIPS: 0.1379, Perplexity: 159.6344
+Step 1300/5000, Loss: 0.0084, Recon Error: 0.0017, VQ Loss: 0.0005, LPIPS: 0.0616, Perplexity: 183.3081
+Step 1400/5000, Loss: 0.0068, Recon Error: 0.0014, VQ Loss: 0.0005, LPIPS: 0.0499, Perplexity: 180.0801
+Step 1500/5000, Loss: 0.0066, Recon Error: 0.0013, VQ Loss: 0.0005, LPIPS: 0.0482, Perplexity: 179.5964
+Step 1600/5000, Loss: 0.0075, Recon Error: 0.0016, VQ Loss: 0.0006, LPIPS: 0.0536, Perplexity: 184.4748
+Step 1700/5000, Loss: 0.0065, Recon Error: 0.0013, VQ Loss: 0.0005, LPIPS: 0.0472, Perplexity: 182.1058
+Step 1800/5000, Loss: 0.0064, Recon Error: 0.0013, VQ Loss: 0.0006, LPIPS: 0.0446, Perplexity: 185.1788
+Step 1900/5000, Loss: 0.0163, Recon Error: 0.0016, VQ Loss: 0.0008, LPIPS: 0.1386, Perplexity: 111.9376
+Step 2000/5000, Loss: 0.0064, Recon Error: 0.0013, VQ Loss: 0.0005, LPIPS: 0.0457, Perplexity: 162.0897
+Step 2100/5000, Loss: 0.0049, Recon Error: 0.0010, VQ Loss: 0.0005, LPIPS: 0.0342, Perplexity: 174.7336
+Step 2200/5000, Loss: 0.0054, Recon Error: 0.0012, VQ Loss: 0.0006, LPIPS: 0.0362, Perplexity: 184.3514
+Step 2300/5000, Loss: 0.0057, Recon Error: 0.0013, VQ Loss: 0.0006, LPIPS: 0.0385, Perplexity: 185.4680
+Step 2400/5000, Loss: 0.0047, Recon Error: 0.0010, VQ Loss: 0.0005, LPIPS: 0.0322, Perplexity: 181.6631
+Step 2500/5000, Loss: 0.0054, Recon Error: 0.0012, VQ Loss: 0.0006, LPIPS: 0.0365, Perplexity: 184.0581
+Step 2600/5000, Loss: 0.0053, Recon Error: 0.0012, VQ Loss: 0.0006, LPIPS: 0.0351, Perplexity: 184.2063
+Step 2700/5000, Loss: 0.0055, Recon Error: 0.0012, VQ Loss: 0.0006, LPIPS: 0.0359, Perplexity: 187.8173
+Step 2800/5000, Loss: 0.0044, Recon Error: 0.0010, VQ Loss: 0.0005, LPIPS: 0.0282, Perplexity: 179.1352
+Step 2900/5000, Loss: 0.0044, Recon Error: 0.0010, VQ Loss: 0.0006, LPIPS: 0.0282, Perplexity: 182.6620
+Step 3000/5000, Loss: 0.0043, Recon Error: 0.0010, VQ Loss: 0.0006, LPIPS: 0.0280, Perplexity: 178.0124
+Step 3100/5000, Loss: 0.0045, Recon Error: 0.0010, VQ Loss: 0.0005, LPIPS: 0.0295, Perplexity: 184.0390
+Step 3200/5000, Loss: 0.0044, Recon Error: 0.0010, VQ Loss: 0.0006, LPIPS: 0.0283, Perplexity: 181.5668
+Step 3300/5000, Loss: 0.0039, Recon Error: 0.0009, VQ Loss: 0.0005, LPIPS: 0.0245, Perplexity: 173.7237
+Step 3400/5000, Loss: 0.0187, Recon Error: 0.0040, VQ Loss: 0.0016, LPIPS: 0.1304, Perplexity: 65.5418
+Step 3500/5000, Loss: 0.0042, Recon Error: 0.0009, VQ Loss: 0.0005, LPIPS: 0.0286, Perplexity: 123.0538
+Step 3600/5000, Loss: 0.0041, Recon Error: 0.0009, VQ Loss: 0.0005, LPIPS: 0.0267, Perplexity: 145.9592
+Step 3700/5000, Loss: 0.0045, Recon Error: 0.0011, VQ Loss: 0.0006, LPIPS: 0.0276, Perplexity: 166.6768
+Step 3800/5000, Loss: 0.0038, Recon Error: 0.0009, VQ Loss: 0.0005, LPIPS: 0.0243, Perplexity: 165.5613
+Step 3900/5000, Loss: 0.0032, Recon Error: 0.0007, VQ Loss: 0.0005, LPIPS: 0.0200, Perplexity: 162.5620
+Step 4000/5000, Loss: 0.0040, Recon Error: 0.0009, VQ Loss: 0.0006, LPIPS: 0.0247, Perplexity: 178.1562
+Step 4100/5000, Loss: 0.0035, Recon Error: 0.0009, VQ Loss: 0.0005, LPIPS: 0.0214, Perplexity: 175.6451
+Step 4200/5000, Loss: 0.0034, Recon Error: 0.0008, VQ Loss: 0.0005, LPIPS: 0.0209, Perplexity: 171.6276
+Step 4300/5000, Loss: 0.0033, Recon Error: 0.0008, VQ Loss: 0.0005, LPIPS: 0.0207, Perplexity: 169.1377
+Step 4400/5000, Loss: 0.0039, Recon Error: 0.0010, VQ Loss: 0.0006, LPIPS: 0.0232, Perplexity: 178.8321
+Step 4500/5000, Loss: 0.0036, Recon Error: 0.0008, VQ Loss: 0.0006, LPIPS: 0.0227, Perplexity: 178.6429
+Step 4600/5000, Loss: 0.0029, Recon Error: 0.0007, VQ Loss: 0.0005, LPIPS: 0.0178, Perplexity: 165.6670
+Step 4700/5000, Loss: 0.0035, Recon Error: 0.0007, VQ Loss: 0.0006, LPIPS: 0.0219, Perplexity: 172.7740
+Step 4800/5000, Loss: 0.0046, Recon Error: 0.0007, VQ Loss: 0.0005, LPIPS: 0.0342, Perplexity: 125.7487
+Step 4900/5000, Loss: 0.0036, Recon Error: 0.0008, VQ Loss: 0.0005, LPIPS: 0.0226, Perplexity: 138.6221
+Step 5000/5000, Loss: 0.0029, Recon Error: 0.0007, VQ Loss: 0.0005, LPIPS: 0.0169, Perplexity: 145.3509
+모델 저장 완료: model/codebook_experiments/vq_vae_k256_thr0.01.pth
+{"num_embeddings": 256, "dead_code_threshold": 0.01, "recon_mse": 0.0007646905829509099, "psnr": 31.165142580491217, "static_churn": 0.42370390950307146, "copy_agreement": 0.5329404034153415, "codes_used": 256, "perplexity": 151.15422348325748, "nn_dist_ratio": 0.17940146440021182, "train_minutes": 23.86735621293386}
+사용 중인 장치: mps
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /Users/dowon/miniconda3/envs/car-racing/lib/python3.11/site-packages/lpips/weights/v0.1/vgg.pth
+학습 시작 - Device : mps
+Step 100/5000, Loss: 0.0797, Recon Error: 0.0209, VQ Loss: 0.0011, LPIPS: 0.5764, Perplexity: 2.8649
+Step 200/5000, Loss: 0.0438, Recon Error: 0.0076, VQ Loss: 0.0008, LPIPS: 0.3538, Perplexity: 6.3601
+Step 300/5000, Loss: 0.0314, Recon Error: 0.0050, VQ Loss: 0.0004, LPIPS: 0.2598, Perplexity: 11.1873
+Step 400/5000, Loss: 0.0241, Recon Error: 0.0040, VQ Loss: 0.0004, LPIPS: 0.1973, Perplexity: 16.2130
+Step 500/5000, Loss: 0.0190, Recon Error: 0.0035, VQ Loss: 0.0004, LPIPS: 0.1517, Perplexity: 28.9025
+Step 600/5000, Loss: 0.0173, Recon Error: 0.0029, VQ Loss: 0.0003, LPIPS: 0.1411, Perplexity: 45.7978
+Step 700/5000, Loss: 0.0125, Recon Error: 0.0023, VQ Loss: 0.0003, LPIPS: 0.0995, Perplexity: 77.7298
+Step 800/5000, Loss: 0.0175, Recon Error: 0.0024, VQ Loss: 0.0003, LPIPS: 0.1482, Perplexity: 79.5559
+Step 900/5000, Loss: 0.0106, Recon Error: 0.0019, VQ Loss: 0.0003, LPIPS: 0.0841, Perplexity: 95.7458
+Step 1000/5000, Loss: 0.0098, Recon Error: 0.0020, VQ Loss: 0.0003, LPIPS: 0.0758, Perplexity: 95.2022
+Step 1100/5000, Loss: 0.0089, Recon Error: 0.0018, VQ Loss: 0.0003, LPIPS: 0.0687, Perplexity: 93.5188
+Step 1200/5000, Loss: 0.0083, Recon Error: 0.0017, VQ Loss: 0.0003, LPIPS: 0.0632, Perplexity: 92.0687
+Step 1300/5000, Loss: 0.0076, Recon Error: 0.0014, VQ Loss: 0.0003, LPIPS: 0.0587, Perplexity: 91.8630
+Step 1400/5000, Loss: 0.0103, Recon Error: 0.0017, VQ Loss: 0.0003, LPIPS: 0.0828, Perplexity: 79.7758
+Step 1500/5000, Loss: 0.0076, Recon Error: 0.0015, VQ Loss: 0.0003, LPIPS: 0.0580, Perplexity: 84.9593
+Step 1600/5000, Loss: 0.0071, Recon Error: 0.0015, VQ Loss: 0.0003, LPIPS: 0.0523, Perplexity: 90.9103
+Step 1700/5000, Loss: 0.0065, Recon Error: 0.0014, VQ Loss: 0.0003, LPIPS: 0.0478, Perplexity: 90.5741
+Step 1800/5000, Loss: 0.0064, Recon Error: 0.0014, VQ Loss: 0.0003, LPIPS: 0.0474, Perplexity: 91.9490
+Step 1900/5000, Loss: 0.0063, Recon Error: 0.0013, VQ Loss: 0.0003, LPIPS: 0.0468, Perplexity: 91.3768
+Step 2000/5000, Loss: 0.0066, Recon Error: 0.0013, VQ Loss: 0.0004, LPIPS: 0.0488, Perplexity: 93.4672
+Step 2100/5000, Loss: 0.0059, Recon Error: 0.0013, VQ Loss: 0.0004, LPIPS: 0.0422, Perplexity: 91.9585
+Step 2200/5000, Loss: 0.0058, Recon Error: 0.0013, VQ Loss: 0.0004, LPIPS: 0.0418, Perplexity: 92.9989
+Step 2300/5000, Loss: 0.0151, Recon Error: 0.0016, VQ Loss: 0.0004, LPIPS: 0.1303, Perplexity: 77.2265
+Step 2400/5000, Loss: 0.0083, Recon Error: 0.0013, VQ Loss: 0.0004, LPIPS: 0.0663, Perplexity: 83.0587
+Step 2500/5000, Loss: 0.0056, Recon Error: 0.0011, VQ Loss: 0.0004, LPIPS: 0.0413, Perplexity: 85.6685
+Step 2600/5000, Loss: 0.0049, Recon Error: 0.0012, VQ Loss: 0.0004, LPIPS: 0.0340, Perplexity: 89.4377
+Step 2700/5000, Loss: 0.0053, Recon Error: 0.0012, VQ Loss: 0.0004, LPIPS: 0.0372, Perplexity: 93.6847
+Step 2800/5000, Loss: 0.0049, Recon Error: 0.0011, VQ Loss: 0.0004, LPIPS: 0.0345, Perplexity: 96.3897
+Step 2900/5000, Loss: 0.0050, Recon Error: 0.0011, VQ Loss: 0.0004, LPIPS: 0.0344, Perplexity: 94.0903
+Step 3000/5000, Loss: 0.0050, Recon Error: 0.0011, VQ Loss: 0.0004, LPIPS: 0.0345, Perplexity: 94.9530
+Step 3100/5000, Loss: 0.0048, Recon Error: 0.0011, VQ Loss: 0.0004, LPIPS: 0.0326, Perplexity: 93.9336
+Step 3200/5000, Loss: 0.0045, Recon Error: 0.0010, VQ Loss: 0.0004, LPIPS: 0.0310, Perplexity: 94.0866
+Step 3300/5000, Loss: 0.0045, Recon Error: 0.0010, VQ Loss: 0.0004, LPIPS: 0.0308, Perplexity: 95.9531
+Step 3400/5000, Loss: 0.0046, Recon Error: 0.0012, VQ Loss: 0.0004, LPIPS: 0.0297, Perplexity: 92.9681
+Step 3500/5000, Loss: 0.0041, Recon Error: 0.0010, VQ Loss: 0.0004, LPIPS: 0.0273, Perplexity: 93.2336
+Step 3600/5000, Loss: 0.0042, Recon Error: 0.0010, VQ Loss: 0.0004, LPIPS: 0.0281, Perplexity: 92.0452
+Step 3700/5000, Loss: 0.0079, Recon Error: 0.0012, VQ Loss: 0.0004, LPIPS: 0.0625, Perplexity: 78.6855
+Step 3800/5000, Loss: 0.0047, Recon Error: 0.0010, VQ Loss: 0.0004, LPIPS: 0.0329, Perplexity: 78.1720
+Step 3900/5000, Loss: 0.0037, Recon Error: 0.0009, VQ Loss: 0.0004, LPIPS: 0.0247, Perplexity: 85.7081
+Step 4000/5000, Loss: 0.0037, Recon Error: 0.0009, VQ Loss: 0.0004, LPIPS: 0.0239, Perplexity: 89.8278
+Step 4100/5000, Loss: 0.0040, Recon Error: 0.0009, VQ Loss: 0.0004, LPIPS: 0.0265, Perplexity: 94.0629
+Step 4200/5000, Loss: 0.0040, Recon Error: 0.0010, VQ Loss: 0.0004, LPIPS: 0.0259, Perplexity: 92.4990
+Step 4300/5000, Loss: 0.0036, Recon Error: 0.0008, VQ Loss: 0.0004, LPIPS: 0.0239, Perplexity: 93.5145
+Step 4400/5000, Loss: 0.0038, Recon Error: 0.0010, VQ Loss: 0.0004, LPIPS: 0.0236, Perplexity: 93.8260
+Step 4500/5000, Loss: 0.0033, Recon Error: 0.0007, VQ Loss: 0.0004, LPIPS: 0.0225, Perplexity: 93.7896
+Step 4600/5000, Loss: 0.0038, Recon Error: 0.0009, VQ Loss: 0.0005, LPIPS: 0.0249, Perplexity: 95.6281
+Step 4700/5000, Loss: 0.0033, Recon Error: 0.0008, VQ Loss: 0.0004, LPIPS: 0.0217, Perplexity: 93.8426
+Step 4800/5000, Loss: 0.0033, Recon Error: 0.0008, VQ Loss: 0.0004, LPIPS: 0.0206, Perplexity: 94.0564
+Step 4900/5000, Loss: 0.0035, Recon Error: 0.0008, VQ Loss: 0.0004, LPIPS: 0.0234, Perplexity: 92.4727
+Step 5000/5000, Loss: 0.0031, Recon Error: 0.0007, VQ Loss: 0.0004, LPIPS: 0.0196, Perplexity: 92.2721
+모델 저장 완료: model/codebook_experiments/vq_vae_k128_thr0.01.pth
+{"num_embeddings": 128, "dead_code_threshold": 0.01, "recon_mse": 0.0008237920721371969, "psnr": 30.84182391845049, "static_churn": 0.4341593126664674, "copy_agreement": 0.5231667698019802, "codes_used": 128, "perplexity": 94.79599846642363, "nn_dist_ratio": 0.17940046674689009, "train_minutes": 23.65942889849345}

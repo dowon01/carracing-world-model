@@ -4,21 +4,15 @@ import numpy as np
 from torch.utils.data import DataLoader
 from dataset import RacingDataset 
 from vq_vae import VQVAE
+from config import FRAMES_PATH, VQ_VAE_PATH, VQ_VAE_CONFIG, get_device
 
 def visualize_saved_model(model_path, data_path, num_images=5):
     # 1. 장치 설정 
-    device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
+    device = get_device()
     print(f"사용 장치: {device}")
 
     # 2. 모델 초기화 (학습 때와 동일한 파라미터)
-    model = VQVAE(
-        num_hiddens=128, 
-        num_residual_layers=2, 
-        num_residual_hiddens=32, 
-        num_embeddings=512, 
-        embedding_dim=64, 
-        commitment_cost=0.5
-    ).to(device)
+    model = VQVAE(**VQ_VAE_CONFIG).to(device)
 
     # 3. 가중치 로드
     # map_location은 다른 장치(CPU 등)에서 저장된 파일을 불러올 때 안전하게 매핑
@@ -56,6 +50,4 @@ def visualize_saved_model(model_path, data_path, num_images=5):
     plt.show()
 
 if __name__ == "__main__":
-    MODEL_PATH = "model/vq_vae_racing.pth"
-    DATA_PATH = "racing_data/play_action_frames.npy"
-    visualize_saved_model(MODEL_PATH, DATA_PATH)
+    visualize_saved_model(VQ_VAE_PATH, FRAMES_PATH)

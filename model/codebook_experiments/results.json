@@ -1,0 +1,61 @@
+[
+  {
+    "num_embeddings": 512,
+    "dead_code_threshold": 1.0,
+    "recon_mse": 0.0007008472877244155,
+    "psnr": 31.543766030372815,
+    "static_churn": 0.43883727187553956,
+    "copy_agreement": 0.5183135501050105,
+    "codes_used": 512,
+    "perplexity": 266.8865681659193,
+    "nn_dist_ratio": 0.14204490851348664
+  },
+  {
+    "num_embeddings": 256,
+    "dead_code_threshold": 1.0,
+    "recon_mse": 0.0007596350312232971,
+    "psnr": 31.193950156093663,
+    "static_churn": 0.3795400306225564,
+    "copy_agreement": 0.5759486104860486,
+    "codes_used": 256,
+    "perplexity": 157.41942627999947,
+    "nn_dist_ratio": 0.1945596617726981,
+    "train_minutes": 25.428452503681182
+  },
+  {
+    "num_embeddings": 128,
+    "dead_code_threshold": 1.0,
+    "recon_mse": 0.0008371695044140021,
+    "psnr": 30.771866000967762,
+    "static_churn": 0.4194575933685601,
+    "copy_agreement": 0.5384667372987298,
+    "codes_used": 128,
+    "perplexity": 91.00550423243669,
+    "nn_dist_ratio": 0.16031503018744428,
+    "train_minutes": 23.665726435184478
+  },
+  {
+    "num_embeddings": 256,
+    "dead_code_threshold": 0.01,
+    "recon_mse": 0.0007646905829509099,
+    "psnr": 31.165142580491217,
+    "static_churn": 0.42370390950307146,
+    "copy_agreement": 0.5329404034153415,
+    "codes_used": 256,
+    "perplexity": 151.15422348325748,
+    "nn_dist_ratio": 0.17940146440021182,
+    "train_minutes": 23.86735621293386
+  },
+  {
+    "num_embeddings": 128,
+    "dead_code_threshold": 0.01,
+    "recon_mse": 0.0008237920721371969,
+    "psnr": 30.84182391845049,
+    "static_churn": 0.4341593126664674,
+    "copy_agreement": 0.5231667698019802,
+    "codes_used": 128,
+    "perplexity": 94.79599846642363,
+    "nn_dist_ratio": 0.17940046674689009,
+    "train_minutes": 23.65942889849345
+  }
+]
